@@ -10,14 +10,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a-scene>
+  <a-scene general-scene>
     <a-entity id="box" geometry="primitive: box; width: 1; depth: 1; height: 1" position="-1 0.5 -3" rotation="0 45 0" material="color: #4CC3D9">
-      <a-animation attribute="material.color"
+      <!-- <a-animation attribute="material.color"
                   dur="1000"
-                  from="#4CC3D9"  
+                  from="#4CC3D9"
                   to="#FC575E"
                     begin="click"
-                  ></a-animation>
+                  ></a-animation> -->
     </a-entity>
 
     <a-entity id="sphere" geometry="primitive: sphere; radius: 1.25" material="color: #EF2D5E" position="0 1.25 -5"></a-entity>
