@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>lostVR</title>
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a-scene>
+    <a-entity id="box" geometry="primitive: box; width: 1; depth: 1; height: 1" position="-1 0.5 -3" rotation="0 45 0" material="color: #4CC3D9">
+      <a-animation attribute="material.color"
+                  dur="1000"
+                  from="#4CC3D9"  
+                  to="#FC575E"
+                    begin="click"
+                  ></a-animation>
+    </a-entity>
+
+    <a-entity id="sphere" geometry="primitive: sphere; radius: 1.25" material="color: #EF2D5E" position="0 1.25 -5"></a-entity>
+
+    <a-entity id="sky" geometry="primitive: sphere; radius: 100" material="color: #ECECEC; shader: flat; side: back"></a-entity>
+    <a-camera>
+      <a-cursor></a-cursor>
+    </a-camera>
+  </a-scene>
+
+</body>
+</html>
