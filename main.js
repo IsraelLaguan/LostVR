@@ -4,11 +4,18 @@ AFRAME.registerComponent('general-scene', {
          */
         init: function () {
           var scene = document.querySelector('a-scene');
-          var box = document.querySelector('a-entity');
+          var box = document.querySelector('#box');
+          var sphere = document.querySelector('#sphere');
+
           console.log('box');
+
           box.addEventListener('click', function(){
             var entity = scene.querySelector('a-entity');
             entity.setAttribute('material', 'color', 'red');
+          });
+
+          sphere.addEventListener('click', function(){
+            this.setAttribute('geometry', {radius: 3});
           });
 
 
