@@ -3,18 +3,17 @@
        var scene = document.querySelector('a-scene');
        var first = document.querySelector('#one');
        var moveOne = document.querySelector('#move1');
-       var bushOne = document.querySelector('#right-white');
-       var bushTwo = document.querySelector('#left-white');
+       var show = document.querySelector('#firstAnSphere2');
+       var startEl = document.querySelector('#firstAnPlane');
 
-       bushTwo.addEventListener('mouseenter', function(){
-         var sphere = document.querySelector('#firstAnSphere');
-         sphere.setAttribute('position', {x: -13.6, y: 4.6, z: 11.2});
+       startEl.addEventListener('mouseenter', function(){
+         var show = document.querySelector('#firstAnSphere2');
+         show.setAttribute('scale', {x: 7, y: 7, z: 0.3});
        });
 
-       bushOne.addEventListener('mouseenter', function(){
-         console.log('hey');
-         var plane = document.querySelector('#firstAnPlane');
-         plane.setAttribute('position', {x: -6.2, y: 4, z: 12.5});
+       show.addEventListener('mouseleave', function(){
+         var nextLevel = document.querySelector('#firstAnSphere');
+         nextLevel.setAttribute('position', {x: -8.7, y: 6, z:15});
        });
 
        first.addEventListener('mouseenter', function(){
@@ -23,8 +22,5 @@
         //  c.setAttribute('animation', 'property: position; dur: 100; easing: easeInOutSine; to:-13 5.9 41.3;');
 
        });
-
-
-
      }
    });
