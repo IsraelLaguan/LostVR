@@ -16,15 +16,17 @@
       //  first episode animations
        startEl.addEventListener('mouseenter', function(){
          var show = document.querySelector('#firstAnSphere2');
-         show.setAttribute('scale', {x: 7, y: 7, z: 0.3});
+         show.setAttribute('scale', {x: 1.3, y: 1.3, z: 0.3});
        });
+
+       console.log('hey');
        show.addEventListener('mouseleave', function(){
          var nextLevel = document.querySelector('#firstAnSphere');
-         nextLevel.setAttribute('position', {x: -8.7, y: 6, z:15});
+         nextLevel.setAttribute('position', {x: -19.2, y: 3.3, z:17.7});
        });
        firstMove.addEventListener('mouseenter', function(){
          var c = document.querySelector('a-camera');
-         c.setAttribute('position', {x: 17, y: 5.9, z: 41.3});
+         c.setAttribute('position', {x: -2.7, y: 4.6, z: 35.3});
          c.setAttribute('rotation', {x: 0, y: 0, z: 0});
        });
 
